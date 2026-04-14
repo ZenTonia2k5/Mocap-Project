@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Pose Estimator Comparison Dashboard</title>
+    <!-- Modern Sans-serif Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Background dynamic elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="icon">✨</span>
+                <h1>PoseScope <span>Comparison Engine</span></h1>
+            </div>
+            <p class="subtitle">Live evaluation of Top-Down and Bottom-Up 2D Human Pose Estimation Models locally on Apple Silicon (MPS).</p>
+        </header>
+
+        <div class="control-panel glass-panel">
+            <div class="controls-left">
+                <label for="model-select">Active Model:</label>
+                <select id="model-select" class="dropdown">
+                    <option value="yolo26" selected>YOLOv26 Pose (Ultralytics)</option>
+                    <option value="hrnet">HRNet (Top-Down)</option>
+                    <option value="rtmpose">RTMPose (Top-Down)</option>
+                    <option value="vitpose">ViTPose (Transformer)</option>
+                    <option value="higherhrnet">HigherHRNet (Bottom-Up)</option>
+                    <option value="openpose">OpenPose (Bottom-Up)</option>
+                    <option value="alphapose">AlphaPose (Top-Down)</option>
+                </select>
+                <button id="switch-btn" class="btn primary-btn">Switch Model</button>
+            </div>
+            <div class="controls-right">
+                <button id="metrics-btn" class="btn secondary-btn">
+                    <span class="btn-icon">📊</span> View Metrics
+                </button>
+            </div>
+        </div>
+
+        <div class="video-wrapper">
+            <div class="glass-panel">
+                <div class="stream-container">
+                    <div id="loading-overlay" class="hidden">
+                        <div class="spinner"></div>
+                        <p>Loading Model Weights to GPU...</p>
+                    </div>
+                    <img id="live-stream" src="{{ url_for('video_feed') }}" alt="Live YOLOv26 Pose Feed">
+                    <div class="live-badge">
+                        <span class="dot pulse"></span>
+                        LIVE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Metrics Modal -->
+    <div id="metrics-modal" class="modal-backdrop hidden">
+        <div class="modal glass-panel">
+            <div class="modal-header">
+                <h2>📊 Pipeline Architecture & Metrics</h2>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body" id="metrics-content">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

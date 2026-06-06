@@ -3,6 +3,8 @@ import time
 import threading
 import numpy as np
 import pandas as pd
+import os
+import json
 from ultralytics import YOLO
 
 import matplotlib.pyplot as plt
@@ -29,25 +31,49 @@ FRAME_W, FRAME_H = 640, 480
 
 class CameraCalibration:
     """
-    Dummy Camera Calibration Matrix Holder (N-Camera Support).
-    Real 3D requires actual intrinsic (K) and extrinsic (R, t) matrices.
+    Camera Calibration Matrix Holder.
+    Loads real intrinsic (K) and extrinsic (R, t) matrices from 'camera_calib.json' if available.
+    Otherwise falls back to dummy matrices.
     """
     def __init__(self, max_cams=10):
-        # Dummy Intrinsic K (assuming 640x480, f=600)
-        self.K = np.array([[600, 0, 320], 
-                           [0, 600, 240], 
-                           [0, 0, 1]], dtype=float)
-        
         self.P_list = []
-        for i in range(max_cams):
-            R = np.eye(3)
-            # Default physical spread for dummy math: spread them apart
-            if i == 0: t_x = 0
-            elif i % 2 == 1: t_x = -((i+1)//2) * 1.0
-            else: t_x = (i//2) * 1.0
-            T = np.array([[t_x], [0], [0]])
-            P = self.K @ np.hstack((R, T))
-            self.P_list.append(P)
+        
+        calib_file = "camera_calib.json"
+        if os.path.exists(calib_file):
+            print(f"Loading real camera calibration from {calib_file}...")
+            with open(calib_file, "r") as f:
+                data = json.load(f)
+            
+            # The calibration tool saves P_list directly as lists
+            p_list_data = data.get("P_list", [])
+            for p in p_list_data:
+                self.P_list.append(np.array(p, dtype=float))
+            
+            # Pad with dummy matrices if max_cams > loaded cameras
+            self.K = np.array(data.get("intrinsics", [[[600, 0, 320], [0, 600, 240], [0, 0, 1]]])[0], dtype=float)
+            loaded_cams = len(self.P_list)
+            for i in range(loaded_cams, max_cams):
+                R = np.eye(3)
+                t_x = i * 1.0
+                T = np.array([[t_x], [0], [0]])
+                P = self.K @ np.hstack((R, T))
+                self.P_list.append(P)
+        else:
+            print(f"Warning: {calib_file} not found. Using DUMMY calibration matrices.")
+            # Dummy Intrinsic K (assuming 640x480, f=600)
+            self.K = np.array([[600, 0, 320], 
+                               [0, 600, 240], 
+                               [0, 0, 1]], dtype=float)
+            
+            for i in range(max_cams):
+                R = np.eye(3)
+                # Default physical spread for dummy math: spread them apart
+                if i == 0: t_x = 0
+                elif i % 2 == 1: t_x = -((i+1)//2) * 1.0
+                else: t_x = (i//2) * 1.0
+                T = np.array([[t_x], [0], [0]])
+                P = self.K @ np.hstack((R, T))
+                self.P_list.append(P)
             
         self.P1 = self.P_list[0]
         self.P2 = self.P_list[1]

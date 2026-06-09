@@ -1,0 +1,16 @@
+# Custom coco8-pose dataset configuration
+path: D:\BKU\Mocap\PoseEstimation_Win\dataset\coco8-pose # absolute dataset root path
+train: images/train
+val: images/val
+test: 
+
+# Keypoints
+kpt_shape: [17, 3]
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
+
+# Classes
+names:
+  0: person
+
+# Download script/URL (automatically downloaded by Ultralytics if not present)
+# download: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8-pose.zip

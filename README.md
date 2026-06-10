@@ -4,7 +4,8 @@ Project about Motion Capture. Models run with CUDA (Windows) or Metal (MacOS).
 - On Mac version: calibrate camera, pose estimation, plot 3D pose.
 ---
 ## Demo
-<video src="mocap_mac_demo.mp4" controls="controls" muted="muted" width="100%"></video>
+
+https://github.com/user-attachments/assets/897f7a15-c6e3-4ad8-862e-9e29bb20dba7
 
 ---
 ## Downloads

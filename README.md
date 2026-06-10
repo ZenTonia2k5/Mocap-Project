@@ -2,6 +2,9 @@
 Project about Motion Capture. Models run with CUDA (Windows) or Metal (MacOS).
 - On Window version: run models with CUDA and compare, council mode.
 - On Mac version: calibrate camera, pose estimation, plot 3D pose.
+
+[![View Report](https://img.shields.io/badge/More_info-Report_PDF-green)]([https://github.com/ZenTonia2k5/Mocap-Project/blob/main/Multidisciplinary_Project_Report.pdf])
+
 ---
 ## Demo
 

@@ -1,0 +1,770 @@
+
+========================================
+Model: yolo26x
+Timestamp: 2026-06-06 20:25:45
+Mode: Validation
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.9413
+Pose Recall: 1.0000
+Pose F1-Score: 0.9698
+Pose mAP50: 0.9900
+Pose mAP50-95: 0.7432
+Box Precision: 0.8913
+Box Recall: 0.9474
+Box F1-Score: 0.9185
+Box mAP50: 0.9350
+Box mAP50-95: 0.8360
+========================================
+
+========================================
+Model: yolo26n
+Timestamp: 2026-06-06 20:29:14
+Mode: Validation
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.7845
+Pose Recall: 0.5750
+Pose F1-Score: 0.6636
+Pose mAP50: 0.6347
+Pose mAP50-95: 0.4753
+Box Precision: 0.9814
+Box Recall: 0.7895
+Box F1-Score: 0.8750
+Box mAP50: 0.9003
+Box mAP50-95: 0.7193
+========================================
+
+========================================
+Model: yolo26s
+Timestamp: 2026-06-06 20:29:40
+Mode: Validation
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.8806
+Pose Recall: 0.7771
+Pose F1-Score: 0.8256
+Pose mAP50: 0.7674
+Pose mAP50-95: 0.5396
+Box Precision: 0.9176
+Box Recall: 0.8947
+Box F1-Score: 0.9060
+Box mAP50: 0.9018
+Box mAP50-95: 0.7270
+========================================
+
+========================================
+Model: yolo26m
+Timestamp: 2026-06-06 20:30:38
+Mode: Validation
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.9433
+Pose Recall: 0.7895
+Pose F1-Score: 0.8596
+Pose mAP50: 0.9450
+Pose mAP50-95: 0.5837
+Box Precision: 0.9040
+Box Recall: 0.8947
+Box F1-Score: 0.8994
+Box mAP50: 0.9235
+Box mAP50-95: 0.7904
+========================================
+
+========================================
+Model: yolo26l
+Timestamp: 2026-06-06 20:31:35
+Mode: Validation
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.9469
+Pose Recall: 0.9391
+Pose F1-Score: 0.9430
+Pose mAP50: 0.9753
+Pose mAP50-95: 0.6672
+Box Precision: 0.8939
+Box Recall: 0.8871
+Box F1-Score: 0.8905
+Box mAP50: 0.9367
+Box mAP50-95: 0.7980
+========================================
+
+========================================
+Model: mediapipe-complexity-1
+Timestamp: 2026-06-06 20:41:15
+Mode: Validation
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Total Images Validated: 6
+Pose Precision: 1.0000
+Pose Recall: 0.2632
+Pose F1-Score: 0.4167
+Pose mAP50: 0.2632
+Pose mAP50-95: 0.0844
+Total Validation Time (s): 0.42
+========================================
+
+========================================
+Model: openpose-controlnet
+Timestamp: 2026-06-06 20:45:02
+Mode: Validation
+Device: NVIDIA GeForce RTX 4060 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Total Images Validated: 6
+Pose Precision: 0.5000
+Pose Recall: 0.4737
+Pose F1-Score: 0.4865
+Pose mAP50: 0.4434
+Pose mAP50-95: 0.2663
+Total Validation Time (s): 8.51
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:09:19
+Mode: Validation Mode
+council_Precision: 0.5000
+council_Recall: 0.6842
+council_F1: 0.5778
+council_mAP50: 0.6743
+council_mAP50_95: 0.4463
+yolo26n_Precision: 0.6111
+yolo26n_Recall: 0.5789
+yolo26n_F1: 0.5946
+yolo26n_mAP50: 0.5628
+yolo26n_mAP50_95: 0.3539
+yolo26s_Precision: 0.6471
+yolo26s_Recall: 0.5789
+yolo26s_F1: 0.6111
+yolo26s_mAP50: 0.5508
+yolo26s_mAP50_95: 0.3706
+yolo26m_Precision: 0.5909
+yolo26m_Recall: 0.6842
+yolo26m_F1: 0.6341
+yolo26m_mAP50: 0.6536
+yolo26m_mAP50_95: 0.4108
+yolo26l_Precision: 0.7273
+yolo26l_Recall: 0.8421
+yolo26l_F1: 0.7805
+yolo26l_mAP50: 0.8032
+yolo26l_mAP50_95: 0.5041
+yolo26x_Precision: 0.9444
+yolo26x_Recall: 0.8947
+yolo26x_F1: 0.9189
+yolo26x_mAP50: 0.8918
+yolo26x_mAP50_95: 0.5494
+mediapipe_Precision: 0.8333
+mediapipe_Recall: 0.2632
+mediapipe_F1: 0.4000
+mediapipe_mAP50: 0.2544
+mediapipe_mAP50_95: 0.0820
+openpose_Precision: 0.5000
+openpose_Recall: 0.4737
+openpose_F1: 0.4865
+openpose_mAP50: 0.4434
+openpose_mAP50_95: 0.2663
+Total Images Validated: 6
+Total Ground Truth Poses: 19
+Total Validation Time (s): 13.26
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:09:45
+Mode: Validation Mode
+council_Precision: 0.5000
+council_Recall: 0.6842
+council_F1: 0.5778
+council_mAP50: 0.6743
+council_mAP50_95: 0.4463
+yolo26n_Precision: 0.6111
+yolo26n_Recall: 0.5789
+yolo26n_F1: 0.5946
+yolo26n_mAP50: 0.5628
+yolo26n_mAP50_95: 0.3539
+yolo26s_Precision: 0.6471
+yolo26s_Recall: 0.5789
+yolo26s_F1: 0.6111
+yolo26s_mAP50: 0.5508
+yolo26s_mAP50_95: 0.3706
+yolo26m_Precision: 0.5909
+yolo26m_Recall: 0.6842
+yolo26m_F1: 0.6341
+yolo26m_mAP50: 0.6536
+yolo26m_mAP50_95: 0.4108
+yolo26l_Precision: 0.7273
+yolo26l_Recall: 0.8421
+yolo26l_F1: 0.7805
+yolo26l_mAP50: 0.8032
+yolo26l_mAP50_95: 0.5041
+yolo26x_Precision: 0.9444
+yolo26x_Recall: 0.8947
+yolo26x_F1: 0.9189
+yolo26x_mAP50: 0.8918
+yolo26x_mAP50_95: 0.5494
+mediapipe_Precision: 0.8333
+mediapipe_Recall: 0.2632
+mediapipe_F1: 0.4000
+mediapipe_mAP50: 0.2544
+mediapipe_mAP50_95: 0.0820
+openpose_Precision: 0.5000
+openpose_Recall: 0.4737
+openpose_F1: 0.4865
+openpose_mAP50: 0.4434
+openpose_mAP50_95: 0.2663
+Total Images Validated: 6
+Total Ground Truth Poses: 19
+Total Validation Time (s): 13.23
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:10:53
+Mode: Validation Mode
+council_Precision: 0.8125
+council_Recall: 0.6842
+council_F1: 0.7429
+council_mAP50: 0.6743
+council_mAP50_95: 0.4463
+yolo26n_Precision: 0.6111
+yolo26n_Recall: 0.5789
+yolo26n_F1: 0.5946
+yolo26n_mAP50: 0.5628
+yolo26n_mAP50_95: 0.3539
+yolo26s_Precision: 0.6471
+yolo26s_Recall: 0.5789
+yolo26s_F1: 0.6111
+yolo26s_mAP50: 0.5508
+yolo26s_mAP50_95: 0.3706
+yolo26m_Precision: 0.5909
+yolo26m_Recall: 0.6842
+yolo26m_F1: 0.6341
+yolo26m_mAP50: 0.6536
+yolo26m_mAP50_95: 0.4108
+yolo26l_Precision: 0.7273
+yolo26l_Recall: 0.8421
+yolo26l_F1: 0.7805
+yolo26l_mAP50: 0.8032
+yolo26l_mAP50_95: 0.5041
+yolo26x_Precision: 0.9444
+yolo26x_Recall: 0.8947
+yolo26x_F1: 0.9189
+yolo26x_mAP50: 0.8918
+yolo26x_mAP50_95: 0.5494
+mediapipe_Precision: 0.8333
+mediapipe_Recall: 0.2632
+mediapipe_F1: 0.4000
+mediapipe_mAP50: 0.2544
+mediapipe_mAP50_95: 0.0820
+openpose_Precision: 0.5000
+openpose_Recall: 0.4737
+openpose_F1: 0.4865
+openpose_mAP50: 0.4434
+openpose_mAP50_95: 0.2663
+Total Images Validated: 6
+Total Ground Truth Poses: 19
+Total Validation Time (s): 15.53
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:10:58
+Mode: Validation Mode
+council_Precision: 0.8125
+council_Recall: 0.6842
+council_F1: 0.7429
+council_mAP50: 0.6743
+council_mAP50_95: 0.4463
+yolo26n_Precision: 0.6111
+yolo26n_Recall: 0.5789
+yolo26n_F1: 0.5946
+yolo26n_mAP50: 0.5628
+yolo26n_mAP50_95: 0.3539
+yolo26s_Precision: 0.6471
+yolo26s_Recall: 0.5789
+yolo26s_F1: 0.6111
+yolo26s_mAP50: 0.5508
+yolo26s_mAP50_95: 0.3706
+yolo26m_Precision: 0.5909
+yolo26m_Recall: 0.6842
+yolo26m_F1: 0.6341
+yolo26m_mAP50: 0.6536
+yolo26m_mAP50_95: 0.4108
+yolo26l_Precision: 0.7273
+yolo26l_Recall: 0.8421
+yolo26l_F1: 0.7805
+yolo26l_mAP50: 0.8032
+yolo26l_mAP50_95: 0.5041
+yolo26x_Precision: 0.9444
+yolo26x_Recall: 0.8947
+yolo26x_F1: 0.9189
+yolo26x_mAP50: 0.8918
+yolo26x_mAP50_95: 0.5494
+mediapipe_Precision: 0.8333
+mediapipe_Recall: 0.2632
+mediapipe_F1: 0.4000
+mediapipe_mAP50: 0.2544
+mediapipe_mAP50_95: 0.0820
+openpose_Precision: 0.5000
+openpose_Recall: 0.4737
+openpose_F1: 0.4865
+openpose_mAP50: 0.4434
+openpose_mAP50_95: 0.2663
+Total Images Validated: 6
+Total Ground Truth Poses: 19
+Total Validation Time (s): 14.55
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:13:03
+Mode: Prediction Mode
+yolo26n_Precision_vs_Council: 1.0000
+yolo26n_Recall_vs_Council: 1.0000
+yolo26n_F1_vs_Council: 1.0000
+yolo26n_Mean_Error_px_vs_Council: 11.98px
+yolo26s_Precision_vs_Council: 1.0000
+yolo26s_Recall_vs_Council: 1.0000
+yolo26s_F1_vs_Council: 1.0000
+yolo26s_Mean_Error_px_vs_Council: 10.30px
+yolo26m_Precision_vs_Council: 1.0000
+yolo26m_Recall_vs_Council: 1.0000
+yolo26m_F1_vs_Council: 1.0000
+yolo26m_Mean_Error_px_vs_Council: 10.24px
+yolo26l_Precision_vs_Council: 1.0000
+yolo26l_Recall_vs_Council: 1.0000
+yolo26l_F1_vs_Council: 1.0000
+yolo26l_Mean_Error_px_vs_Council: 9.64px
+yolo26x_Precision_vs_Council: 1.0000
+yolo26x_Recall_vs_Council: 1.0000
+yolo26x_F1_vs_Council: 1.0000
+yolo26x_Mean_Error_px_vs_Council: 9.38px
+mediapipe_Precision_vs_Council: 0.9333
+mediapipe_Recall_vs_Council: 0.9333
+mediapipe_F1_vs_Council: 0.9333
+mediapipe_Mean_Error_px_vs_Council: 33.36px
+openpose_Precision_vs_Council: 0.9000
+openpose_Recall_vs_Council: 0.9000
+openpose_F1_vs_Council: 0.9000
+openpose_Mean_Error_px_vs_Council: 13.29px
+Source: test.mp4
+Total Frames Processed: 30
+Average Inference FPS: 0.41
+Total Session Time (s): 75.11
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:13:32
+Mode: Prediction Mode
+yolo26n_Precision_vs_Council: 1.0000
+yolo26n_Recall_vs_Council: 1.0000
+yolo26n_F1_vs_Council: 1.0000
+yolo26n_Mean_Error_px_vs_Council: 8.48px
+yolo26s_Precision_vs_Council: 1.0000
+yolo26s_Recall_vs_Council: 1.0000
+yolo26s_F1_vs_Council: 1.0000
+yolo26s_Mean_Error_px_vs_Council: 3.54px
+yolo26m_Precision_vs_Council: 0.9286
+yolo26m_Recall_vs_Council: 0.9750
+yolo26m_F1_vs_Council: 0.9512
+yolo26m_Mean_Error_px_vs_Council: 2.74px
+yolo26l_Precision_vs_Council: 0.9286
+yolo26l_Recall_vs_Council: 0.9750
+yolo26l_F1_vs_Council: 0.9512
+yolo26l_Mean_Error_px_vs_Council: 3.42px
+yolo26x_Precision_vs_Council: 0.9512
+yolo26x_Recall_vs_Council: 0.9750
+yolo26x_F1_vs_Council: 0.9630
+yolo26x_Mean_Error_px_vs_Council: 3.06px
+mediapipe_Precision_vs_Council: 0.9500
+mediapipe_Recall_vs_Council: 0.9500
+mediapipe_F1_vs_Council: 0.9500
+mediapipe_Mean_Error_px_vs_Council: 10.30px
+openpose_Precision_vs_Council: 0.9500
+openpose_Recall_vs_Council: 0.9500
+openpose_F1_vs_Council: 0.9500
+openpose_Mean_Error_px_vs_Council: 4.18px
+Source: 0
+Total Frames Processed: 40
+Average Inference FPS: 1.14
+Total Session Time (s): 38.39
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:16:12
+Mode: Prediction Mode
+yolo26n_Precision_vs_Council: 0.9028
+yolo26n_Recall_vs_Council: 1.0000
+yolo26n_F1_vs_Council: 0.9489
+yolo26n_Mean_Error_px_vs_Council: 9.53px
+yolo26s_Precision_vs_Council: 0.8553
+yolo26s_Recall_vs_Council: 1.0000
+yolo26s_F1_vs_Council: 0.9220
+yolo26s_Mean_Error_px_vs_Council: 3.94px
+yolo26m_Precision_vs_Council: 0.8667
+yolo26m_Recall_vs_Council: 1.0000
+yolo26m_F1_vs_Council: 0.9286
+yolo26m_Mean_Error_px_vs_Council: 3.07px
+yolo26l_Precision_vs_Council: 0.8889
+yolo26l_Recall_vs_Council: 0.9846
+yolo26l_F1_vs_Council: 0.9343
+yolo26l_Mean_Error_px_vs_Council: 4.67px
+yolo26x_Precision_vs_Council: 0.9143
+yolo26x_Recall_vs_Council: 0.9846
+yolo26x_F1_vs_Council: 0.9481
+yolo26x_Mean_Error_px_vs_Council: 5.42px
+mediapipe_Precision_vs_Council: 0.9844
+mediapipe_Recall_vs_Council: 0.9692
+mediapipe_F1_vs_Council: 0.9767
+mediapipe_Mean_Error_px_vs_Council: 9.80px
+openpose_Precision_vs_Council: 1.0000
+openpose_Recall_vs_Council: 0.9846
+openpose_F1_vs_Council: 0.9922
+openpose_Mean_Error_px_vs_Council: 4.20px
+Source: 0
+Total Frames Processed: 65
+Average Inference FPS: 1.16
+Total Session Time (s): 61.30
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:18:45
+Mode: Prediction Mode
+yolo26s_Precision_vs_Council: 1.0000
+yolo26s_Recall_vs_Council: 1.0000
+yolo26s_F1_vs_Council: 1.0000
+yolo26s_Mean_Error_px_vs_Council: 30.33px
+mediapipe_Precision_vs_Council: 1.0000
+mediapipe_Recall_vs_Council: 1.0000
+mediapipe_F1_vs_Council: 1.0000
+mediapipe_Mean_Error_px_vs_Council: 25.58px
+Source: test.mp4
+Total Frames Processed: 10
+Average Inference FPS: 14.54
+Total Session Time (s): 1.50
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:20:52
+Mode: Prediction Mode
+yolo26x_Precision_vs_Council: 0.8978
+yolo26x_Recall_vs_Council: 0.9704
+yolo26x_F1_vs_Council: 0.9326
+yolo26x_Mean_Error_px_vs_Council: 3.46px
+yolo26l_Precision_vs_Council: 0.8548
+yolo26l_Recall_vs_Council: 0.9677
+yolo26l_F1_vs_Council: 0.9077
+yolo26l_Mean_Error_px_vs_Council: 3.29px
+yolo26m_Precision_vs_Council: 0.8306
+yolo26m_Recall_vs_Council: 0.9515
+yolo26m_F1_vs_Council: 0.8869
+yolo26m_Mean_Error_px_vs_Council: 3.26px
+yolo26s_Precision_vs_Council: 0.8460
+yolo26s_Recall_vs_Council: 0.9623
+yolo26s_F1_vs_Council: 0.9004
+yolo26s_Mean_Error_px_vs_Council: 4.19px
+yolo26n_Precision_vs_Council: 0.8946
+yolo26n_Recall_vs_Council: 0.9380
+yolo26n_F1_vs_Council: 0.9158
+yolo26n_Mean_Error_px_vs_Council: 5.93px
+Source: 0
+Total Frames Processed: 349
+Average Inference FPS: 6.99
+Total Session Time (s): 60.94
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:23:30
+Mode: Prediction Mode
+yolo26x_Precision_vs_Council: 0.6965
+yolo26x_Recall_vs_Council: 0.9471
+yolo26x_F1_vs_Council: 0.8027
+yolo26x_Mean_Error_px_vs_Council: 3.47px
+yolo26l_Precision_vs_Council: 0.6761
+yolo26l_Recall_vs_Council: 0.9444
+yolo26l_F1_vs_Council: 0.7881
+yolo26l_Mean_Error_px_vs_Council: 3.19px
+yolo26m_Precision_vs_Council: 0.6887
+yolo26m_Recall_vs_Council: 0.9656
+yolo26m_F1_vs_Council: 0.8040
+yolo26m_Mean_Error_px_vs_Council: 4.95px
+yolo26s_Precision_vs_Council: 0.6886
+yolo26s_Recall_vs_Council: 0.9709
+yolo26s_F1_vs_Council: 0.8057
+yolo26s_Mean_Error_px_vs_Council: 3.37px
+yolo26n_Precision_vs_Council: 0.7100
+yolo26n_Recall_vs_Council: 0.9392
+yolo26n_F1_vs_Council: 0.8087
+yolo26n_Mean_Error_px_vs_Council: 5.24px
+Source: 0
+Total Frames Processed: 336
+Average Inference FPS: 7.12
+Total Session Time (s): 56.31
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:24:24
+Mode: Prediction Mode
+yolo26x_Precision_vs_Council: 0.8417
+yolo26x_Recall_vs_Council: 0.9646
+yolo26x_F1_vs_Council: 0.8990
+yolo26x_Mean_Error_px_vs_Council: 3.51px
+yolo26l_Precision_vs_Council: 0.8377
+yolo26l_Recall_vs_Council: 0.9823
+yolo26l_F1_vs_Council: 0.9043
+yolo26l_Mean_Error_px_vs_Council: 3.31px
+yolo26m_Precision_vs_Council: 0.9064
+yolo26m_Recall_vs_Council: 0.9425
+yolo26m_F1_vs_Council: 0.9241
+yolo26m_Mean_Error_px_vs_Council: 3.96px
+yolo26s_Precision_vs_Council: 0.7729
+yolo26s_Recall_vs_Council: 0.9336
+yolo26s_F1_vs_Council: 0.8457
+yolo26s_Mean_Error_px_vs_Council: 6.03px
+yolo26n_Precision_vs_Council: 0.9283
+yolo26n_Recall_vs_Council: 0.9735
+yolo26n_F1_vs_Council: 0.9503
+yolo26n_Mean_Error_px_vs_Council: 5.21px
+mediapipe_Precision_vs_Council: 0.9810
+mediapipe_Recall_vs_Council: 0.9115
+mediapipe_F1_vs_Council: 0.9450
+mediapipe_Mean_Error_px_vs_Council: 10.68px
+Source: 0
+Total Frames Processed: 214
+Average Inference FPS: 5.86
+Total Session Time (s): 43.12
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:27:35
+Mode: Prediction Mode
+yolo26s_Precision_vs_Council: 1.0000
+yolo26s_Recall_vs_Council: 1.0000
+yolo26s_F1_vs_Council: 1.0000
+yolo26s_Mean_Error_px_vs_Council: 27.04px
+yolo26n_Precision_vs_Council: 1.0000
+yolo26n_Recall_vs_Council: 1.0000
+yolo26n_F1_vs_Council: 1.0000
+yolo26n_Mean_Error_px_vs_Council: 22.44px
+mediapipe_Precision_vs_Council: 1.0000
+mediapipe_Recall_vs_Council: 1.0000
+mediapipe_F1_vs_Council: 1.0000
+mediapipe_Mean_Error_px_vs_Council: 39.26px
+Source: test.mp4
+Total Frames Processed: 5
+Average Inference FPS: 8.77
+Total Session Time (s): 1.62
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:28:36
+Mode: Prediction Mode
+yolo26x_Precision_vs_Council: 0.9030
+yolo26x_Recall_vs_Council: 1.0000
+yolo26x_F1_vs_Council: 0.9490
+yolo26x_Mean_Error_px_vs_Council: 5.74px
+yolo26l_Precision_vs_Council: 0.9098
+yolo26l_Recall_vs_Council: 1.0000
+yolo26l_F1_vs_Council: 0.9528
+yolo26l_Mean_Error_px_vs_Council: 5.89px
+yolo26m_Precision_vs_Council: 0.9380
+yolo26m_Recall_vs_Council: 1.0000
+yolo26m_F1_vs_Council: 0.9680
+yolo26m_Mean_Error_px_vs_Council: 4.61px
+yolo26s_Precision_vs_Council: 0.9231
+yolo26s_Recall_vs_Council: 0.9917
+yolo26s_F1_vs_Council: 0.9562
+yolo26s_Mean_Error_px_vs_Council: 7.14px
+yolo26n_Precision_vs_Council: 0.9030
+yolo26n_Recall_vs_Council: 1.0000
+yolo26n_F1_vs_Council: 0.9490
+yolo26n_Mean_Error_px_vs_Council: 17.48px
+mediapipe_Precision_vs_Council: 0.9504
+mediapipe_Recall_vs_Council: 0.9504
+mediapipe_F1_vs_Council: 0.9504
+mediapipe_Mean_Error_px_vs_Council: 20.47px
+Source: 0
+Total Frames Processed: 121
+Average Inference FPS: 5.64
+Total Session Time (s): 25.83
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:31:24
+Mode: Prediction Mode
+yolo26x_Precision_vs_Council: 0.9496
+yolo26x_Recall_vs_Council: 0.9851
+yolo26x_F1_vs_Council: 0.9670
+yolo26x_Mean_Error_px_vs_Council: 5.51px
+yolo26l_Precision_vs_Council: 0.9926
+yolo26l_Recall_vs_Council: 1.0000
+yolo26l_F1_vs_Council: 0.9963
+yolo26l_Mean_Error_px_vs_Council: 5.26px
+yolo26m_Precision_vs_Council: 0.9851
+yolo26m_Recall_vs_Council: 0.9851
+yolo26m_F1_vs_Council: 0.9851
+yolo26m_Mean_Error_px_vs_Council: 5.72px
+yolo26s_Precision_vs_Council: 0.9851
+yolo26s_Recall_vs_Council: 0.9851
+yolo26s_F1_vs_Council: 0.9851
+yolo26s_Mean_Error_px_vs_Council: 5.14px
+yolo26n_Precision_vs_Council: 0.9429
+yolo26n_Recall_vs_Council: 0.9851
+yolo26n_F1_vs_Council: 0.9635
+yolo26n_Mean_Error_px_vs_Council: 15.19px
+mediapipe_Precision_vs_Council: 0.9389
+mediapipe_Recall_vs_Council: 0.9179
+mediapipe_F1_vs_Council: 0.9283
+mediapipe_Mean_Error_px_vs_Council: 20.11px
+Source: 0
+Total Frames Processed: 134
+Average Inference FPS: 5.79
+Total Session Time (s): 27.78
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 10:31:42
+Mode: Prediction Mode
+yolo26x_Precision_vs_Council: 0.9627
+yolo26x_Recall_vs_Council: 1.0000
+yolo26x_F1_vs_Council: 0.9810
+yolo26x_Mean_Error_px_vs_Council: 0.00px
+Source: 0
+Total Frames Processed: 134
+Average Inference FPS: 24.46
+Total Session Time (s): 9.28
+========================================
+
+========================================
+Model/System: AI COUNCIL (7 Models Fused)
+Timestamp: 2026-06-08 12:41:33
+Mode: Prediction Mode
+yolo26x_Precision_vs_Council: 0.8975
+yolo26x_Recall_vs_Council: 0.9460
+yolo26x_F1_vs_Council: 0.9211
+yolo26x_Mean_Error_px_vs_Council: 2.58px
+yolo26l_Precision_vs_Council: 0.9108
+yolo26l_Recall_vs_Council: 0.9629
+yolo26l_F1_vs_Council: 0.9361
+yolo26l_Mean_Error_px_vs_Council: 2.86px
+yolo26m_Precision_vs_Council: 0.8803
+yolo26m_Recall_vs_Council: 0.9502
+yolo26m_F1_vs_Council: 0.9139
+yolo26m_Mean_Error_px_vs_Council: 2.88px
+yolo26s_Precision_vs_Council: 0.9407
+yolo26s_Recall_vs_Council: 0.9576
+yolo26s_F1_vs_Council: 0.9491
+yolo26s_Mean_Error_px_vs_Council: 2.92px
+yolo26n_Precision_vs_Council: 0.8311
+yolo26n_Recall_vs_Council: 0.7352
+yolo26n_F1_vs_Council: 0.7802
+yolo26n_Mean_Error_px_vs_Council: 4.70px
+mediapipe_Precision_vs_Council: 0.9857
+mediapipe_Recall_vs_Council: 0.2924
+mediapipe_F1_vs_Council: 0.4510
+mediapipe_Mean_Error_px_vs_Council: 7.25px
+Source: 0
+Total Frames Processed: 285
+Average Inference FPS: 5.98
+Total Session Time (s): 59.74
+========================================
+
+========================================
+Model: yolo26x
+Timestamp: 2026-06-12 15:48:28
+Mode: Validation
+Device: NVIDIA GeForce RTX 4050 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.9413
+Pose Recall: 1.0000
+Pose F1-Score: 0.9698
+Pose mAP50: 0.9900
+Pose mAP50-95: 0.7432
+Box Precision: 0.8913
+Box Recall: 0.9474
+Box F1-Score: 0.9185
+Box mAP50: 0.9350
+Box mAP50-95: 0.8360
+========================================
+
+========================================
+Model: yolo26s
+Timestamp: 2026-06-12 15:51:56
+Mode: Validation
+Device: NVIDIA GeForce RTX 4050 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.8806
+Pose Recall: 0.7771
+Pose F1-Score: 0.8256
+Pose mAP50: 0.7674
+Pose mAP50-95: 0.5396
+Box Precision: 0.9176
+Box Recall: 0.8947
+Box F1-Score: 0.9060
+Box mAP50: 0.9018
+Box mAP50-95: 0.7270
+========================================
+
+========================================
+Model: yolo26n
+Timestamp: 2026-06-12 15:52:32
+Mode: Validation
+Device: NVIDIA GeForce RTX 4050 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.7845
+Pose Recall: 0.5750
+Pose F1-Score: 0.6636
+Pose mAP50: 0.6347
+Pose mAP50-95: 0.4753
+Box Precision: 0.9814
+Box Recall: 0.7895
+Box F1-Score: 0.8750
+Box mAP50: 0.9003
+Box mAP50-95: 0.7193
+========================================
+
+========================================
+Model: yolo26l
+Timestamp: 2026-06-12 15:52:56
+Mode: Validation
+Device: NVIDIA GeForce RTX 4050 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.9469
+Pose Recall: 0.9391
+Pose F1-Score: 0.9430
+Pose mAP50: 0.9753
+Pose mAP50-95: 0.6672
+Box Precision: 0.8939
+Box Recall: 0.8871
+Box F1-Score: 0.8905
+Box mAP50: 0.9367
+Box mAP50-95: 0.7980
+========================================
+
+========================================
+Model: yolo26m
+Timestamp: 2026-06-12 15:54:42
+Mode: Validation
+Device: NVIDIA GeForce RTX 4050 Laptop GPU (CUDA=True)
+Dataset: my_coco8-pose.yaml
+Pose Precision: 0.9433
+Pose Recall: 0.7895
+Pose F1-Score: 0.8596
+Pose mAP50: 0.9450
+Pose mAP50-95: 0.5837
+Box Precision: 0.9040
+Box Recall: 0.8947
+Box F1-Score: 0.8994
+Box mAP50: 0.9235
+Box mAP50-95: 0.7904
+========================================

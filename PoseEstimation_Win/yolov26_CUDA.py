@@ -69,7 +69,9 @@ def main():
         
         print(f"--- Running Validation on {args.data} ---")
         
+        start_val_time = time.time()
         results = model.val(data=args.data, device=device, plots=True)
+        total_val_time = time.time() - start_val_time
         
         r_dict = results.results_dict
 
@@ -99,6 +101,7 @@ def main():
             "Box F1-Score": f"{f1_box:.4f}",
             "Box mAP50": f"{map50_box:.4f}",
             "Box mAP50-95": f"{map50_95_box:.4f}",
+            "Total Validation Time (s)": f"{total_val_time:.2f}",
         }
         
         log_to_file(args.log, args.model, "Validation", metrics_summary, device_name, cuda_available)

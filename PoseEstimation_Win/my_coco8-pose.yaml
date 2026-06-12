@@ -1,5 +1,5 @@
 # Custom coco8-pose dataset configuration
-path: D:\BKU\Mocap\PoseEstimation_Win\dataset\coco8-pose # absolute dataset root path
+path: dataset/coco8-pose # relative dataset root path
 train: images/train
 val: images/val
 test: 
